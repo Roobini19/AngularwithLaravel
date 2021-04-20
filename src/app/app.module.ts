@@ -9,19 +9,23 @@ import { RegisterComponent } from './components/register/register.component';
 import { UserProfileComponent } from './components/user-profile/user-profile.component';
 import { ReactiveFormsModule } from '@angular/forms';
 import { AuthInterceptor } from './shared/auto-state.service';
+import { FlexLayoutModule } from '@angular/flex-layout';
+import { FlexComponent } from './components/flex/flex.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     LoginComponent,
     RegisterComponent,
-    UserProfileComponent
+    UserProfileComponent,
+    FlexComponent
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
     HttpClientModule,
-    ReactiveFormsModule
+    ReactiveFormsModule,
+    FlexLayoutModule
   ],
   providers: [
     {
